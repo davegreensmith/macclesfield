@@ -134,7 +134,8 @@ a:hover {
 #golf,
 #angling,
 #towns {
-    padding: 40px;
+    padding: 20px;
+    margin: 25px
 }
 
 #links {
