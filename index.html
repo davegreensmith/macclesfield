@@ -10,19 +10,22 @@
 <body>
     <header id="header">
         <h1>Welcome to Macclesfield</h1>
-        <img src="./images/banner.jpg" alt="view over Macclesfield Forest">
-        <section class="sections" id="menu">
-            <ul>
-                <a href="">Golf</a>
-                <a href="">Angling</a>
-                <!-- <a href="">Macclesfield FC</a>
+        <!-- <img src="./images/banner.jpg" alt="view over Macclesfield Forest" id="banner"> -->
+    </header>
+        
+    <section class="menu">
+        <ul>
+            <a id="home" href="./index.html">Home</a>
+            <a id="golf" href="./golf.html">Golf</a>
+            <a id="angling" href="./angling.html">Angling</a>
+            <a id="towns" href="https://happyvalley.org.uk/">Bollington, a neighbouring town</a>
+            <!-- <a href="">Macclesfield FC</a>
                 <a href="">Macclesfield RUFC</a>
                 <a href="">Countryside</a>
                 <a href="">Neighbours</a> -->
-            </ul>
-        </section>
-    </header>
-
+        </ul>
+    </section>
+            
     <section class="slide-container" >
         <span id="slider-image-1"></span>
         <span id="slider-image-2"></span>
@@ -45,52 +48,39 @@
             <li>Population: 51,500</li>
             <li>Nicknamed Silk town, referring to the silk mills from the 18th Century</li>
             <li>On a main trainline with direct links to Manchester and London</li>
-            <li></li>
+            <!-- <li></li> -->
         </ul>
     </section>
 
     <section class="sections" id="things-to-do">
         <h2>Things to do in Macclesfield...</h2>
-<ul>
-    <li>Walks</li>
-    <p1>Macclesfield is surrounded by plenty of countryside to enjoy walks with family and friends.  There is a pathway called the Middlewood Way which uses an old railway line (rest assured, this is not used any more!).  We also have </p1>
-    <br></br>
-    <li>Macclesfield Forest</li>
-    <p1></p1>
-    <br></br>
-    <li>Treacle Market</li>
-    <p1>
-    Macclesfield is known as Treacletown, referring to the centuries old accident when a horse drawn wagon overturned, spilling its cargo of Treacle onto the cobbles. The Treacle Market is a chance to find gorgeous things on Macclesfield's streets once again - Just less sticky.</p1>
-    <p1>The Treacle Market takes place on the last Sunday of each month (excpet for December, which is the Sunday before Christmas... a chance for some extra presents!</p1>
-    <p1>The market was started in 2010, and has grown in popularity through the years (taking a break during covid lockdown times).  There are over 160 stalls, including craft stalls, food and drink stalls, and more.  Some local shops also open for the day giving you a chance to take a break for much earned refreshments</p1>
-</ul>
+            <ul>
+                <h3>Walks</h3>
+                <p1>Macclesfield is surrounded by plenty of countryside to enjoy walks with family and friends.  There is a pathway called the Middlewood Way which uses an old railway line (rest assured, this is not used any more!).</p1>
+                <br></br>
+                <h3>Macclesfield Forest</h3>
+                <p1>There is a Forest to the edge of Macclesfield... </p1>
+                <br></br>
+                <h3>Treacle Market</h3>
+                <p1>
+                Macclesfield is known as Treacletown, referring to the centuries old accident when a horse drawn wagon overturned, spilling its cargo of Treacle onto the cobbles. The Treacle Market is a chance to find gorgeous things on Macclesfield's streets once again - Just less sticky.</p1>
+                <p1>The Treacle Market takes place on the last Sunday of each month (excpet for December, and so is held on Sunday before Christmas... a chance for some extra presents!</p1>
+                <p1>The market was started in 2010, and has grown in popularity through the years (taking a break during covid lockdown times).  There are over 160 stalls, including craft stalls, food and drink stalls, and more.  Some local shops also open for the day giving you a chance to take a break for much earned refreshments</p1>
+                <br></br>
+                <h3>Cycling</h3>
+                <p1>Due to the undulating landscape in and around Macclesfield, there are many cycling routes which are very popular.  Tour-de-France wannabies and experienced cyclists alike can be found training hard, and taking in the views over neighbouring areas which surround Macclesfield</p1>
+            </ul>
     </section>
-    <section class="sections" id="links">
-        <h2>Local Sports...</h2>
-        <a href="https://macclesfieldfc.com/" target="_blank">Macclesfield FC</a>
-        <a href="https://www.macclesfieldrufc.co.uk/" target="_blank">Macclesfield RUFC</a>
-        <a href="https://macclesfield.play-cricket.com/home" target="_blank">Macclesfield Cricket Club</a>
-    </section>
-</body>
-<script>
-    let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("image-container");
-  let dots = document.getElementsByClassName("button-container");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+    <section class="sections">
+        <h2>Local Sports clubs...</h2>
+        <section id="links">
+            <a href="https://macclesfieldfc.com/" target="_blank">Macclesfield FC (football)</a>
+            <a href="https://www.macclesfieldrufc.co.uk/" target="_blank">Macclesfield RUFC (rubgy)</a>
+            <a href="https://macclesfield.play-cricket.com/home" target="_blank">Macclesfield CC (cricket)</a>
+        </section>
+    </section>
+
+</body>
+
 </html>

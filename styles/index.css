@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F3DFC1;
+    background-color: #DDBEA8;
     color: #160F29;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
@@ -17,6 +17,55 @@ body {
     text-align: justify;
 }
 
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    width: auto;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    z-index: 999;
+    /* position: fixed; */
+}
+
+
+.menu {
+    display: flex;
+    width: 75%;
+    /* padding: 20px; */
+    /* background-color: #368F8B; */
+    /* color: #F3DFC1; */
+    /* border-radius: 15px; */
+    margin: 30px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections {
+    width: 75%;
+    padding: 20px;
+    background-color: #368F8B;
+    color: #F3DFC1;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    color: #004147;
+    text-shadow: 5px 5px 5px #F3DFC1;
+    font-size: 400%;
+    border-color: black;
+    font-style: italic;
+    flex-shrink: 1;
+}
+
+ul, ol {
+    margin-left: 50px;
+}
 
 .slide-container {
     width: 800px;
@@ -44,14 +93,14 @@ body {
 }
 
 .button-container {
-    top: -20px;
+    top: -40px;
     position: relative;
 }
 
 .slider-button {
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background-color: #F3DFC1;
 }
@@ -64,4 +113,32 @@ body {
 }
 #slider-image-3:target ~ .image-container{
     left: -1600px;
+}
+
+a:hover {
+    font-size: 150%;
+    color: #246A73;
+    background-color: #F3DFC1;
+    transition: 0.5s ease-in, 0.5s ease-out;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home,
+#golf,
+#angling,
+#towns {
+    padding: 40px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
